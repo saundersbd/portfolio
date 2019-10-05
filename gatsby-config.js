@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     "gatsby-plugin-emotion",
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -8,6 +9,11 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/Layout.js"),
         },
+        gatsbyRemarkPlugins: [
+          { resolve: `gatsby-remark-smartypants` },
+          { resolve: `gatsby-remark-widows` },
+          { resolve: `gatsby-remark-images` },
+        ],
       },
     },
     {

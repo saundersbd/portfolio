@@ -6,7 +6,7 @@ const scales = {
   small: 0.75,
   medium: 1,
   large: 1.5,
-  xlarge: 3,
+  xlarge: 2,
 }
 
 const widths = {
@@ -43,7 +43,7 @@ export default {
     family: {
       display: `"Orelo Variable", "Times New Roman", serif`,
       sans: `"National 2 Web", -apple-system, system-ui, BlinkMacSystemFont, sans-serif`,
-      mono: `"Founders Grotesk Mono Web", "Input Mono", "Source Code Pro", "Monaco", monospace`,
+      mono: `"IBM Plex Mono", monospace`,
     },
     size: {
       small: `${scales.small}rem`,

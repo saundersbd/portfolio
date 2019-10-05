@@ -1,7 +1,9 @@
 import React from "react"
 import { Global } from "@emotion/core"
 import DesignSystemProvider from "./designSystem/DesignSystemProvider"
+import { Atoms, PlainList } from "./designSystem/designSystem"
 import Wrapper from "../components/Wrapper"
+import WorkIndex from "../components/WorkIndex"
 
 export default function Layout({ children, ...props }) {
   return (
@@ -17,7 +19,7 @@ export default function Layout({ children, ...props }) {
             background: "#F8F8F8",
             color: "#222",
             fontFamily: "IBM Plex",
-            fontSize: "16px",
+            fontSize: "125%",
             lineHeight: "1.625rem",
           },
         }}

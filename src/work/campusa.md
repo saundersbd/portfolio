@@ -5,7 +5,18 @@ date: 2015-01-02
 
 # CampUSA App
 
+|               |                                                                      |
+| ------------- | -------------------------------------------------------------------- |
+| Team Members: | Erin Mays, Maria Surawska, Carl Hill-Popper, David Ryan, Alex Nimmer |
+| Platforms:    | iOS, Android                                                         |
+
 CampUSA is a native app for iOS and Android that lets people book reservations at Thousand Trails campgrounds. When we started working on the project, the majority of campground bookings were handled over the phone. The Thousand Trails company wanted to create a native app experience that would allow people to explore and book campsites while they’re away from the computer.
+
+<Image 
+    alt="Alt Text"
+    src="/images/campusa/campusa-main-image.png"
+    caption="This is a caption"
+/>
 
 ## The Biggest Challenges
 
@@ -23,7 +34,7 @@ If you’re going to build a product that lets people book campsites, it of cour
 
 The first thing I did was get a handle on the data set. I wanted to figure out what we had to work with. Knowing the names of things and how customers think about them is crucial to my design process, because I’m trying to build off of things that they understand.
 
-I worked with the Thousand Trails back-end team to discover these key facts:
+### I worked with the Thousand Trails back-end team to discover these key facts:
 
 - There aren’t many Thousand Trails campgrounds (less than 300)
 - The campgrounds are organized by state and region, but states like Florida and California have a lot more than Indiana or Illinois
@@ -71,4 +82,6 @@ I got a chance to show every skill in my toolkit, including writing, prototyping
 
 Thousand Trails is well-positioned to expand their brand and mobile platform in the future. Now they have one of the most beautiful apps in the campground space.
 
-_If you want to hear about more problems our team had to solve on this project, send me a message at saundersbd@gmail.com_.
+---
+
+_If you want to hear about more problems our team solved on this project, send me a message at [saundersbd@gmail.com](mailto:saundersbd@gmail.com)_.

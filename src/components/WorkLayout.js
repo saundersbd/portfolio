@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import DesignSystemProvider from "./designSystem/DesignSystemProvider"
 import { Global } from "@emotion/core"
+import { Atoms } from "./designSystem/designSystem"
+import WorkHeader from "../components/WorkHeader"
 import Wrapper from "../components/Wrapper"
 
 export default function PageTemplate({ data: { mdx } }) {
@@ -19,11 +21,12 @@ export default function PageTemplate({ data: { mdx } }) {
             background: "#F8F8F8",
             color: "#222",
             fontFamily: "IBM Plex",
-            fontSize: "16px",
-            lineHeight: "1.625rem",
+            fontSize: "125%",
+            lineHeight: Atoms.baseline,
           },
         }}
       />
+      <WorkHeader />
       <Wrapper>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </Wrapper>
