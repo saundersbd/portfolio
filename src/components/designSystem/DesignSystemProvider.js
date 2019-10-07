@@ -4,6 +4,7 @@ import Image from "../Image"
 import * as designSystem from "./designSystem"
 
 const components = {
+  blockquote: designSystem.Blockquote,
   h1: designSystem.H1,
   h2: designSystem.H2,
   h3: designSystem.H3,

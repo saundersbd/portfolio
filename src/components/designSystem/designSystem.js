@@ -9,5 +9,6 @@ import HR from "./HR"
 import PlainList from "./PlainList"
 import Link from "./Link"
 import Table from "./Table"
+import Blockquote from "./Blockquote"
 
-export { Atoms, H1, H2, H3, H4, P, UL, HR, PlainList, Link, Table }
+export { Atoms, H1, H2, H3, H4, P, UL, HR, PlainList, Link, Table, Blockquote }

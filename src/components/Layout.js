@@ -3,7 +3,7 @@ import { Global } from "@emotion/core"
 import DesignSystemProvider from "./designSystem/DesignSystemProvider"
 import { Atoms } from "./designSystem/designSystem"
 import Wrapper from "../components/Wrapper"
-import Header from "../components/header"
+import Header from "../components/Header"
 
 export default function Layout({ children, ...props }) {
   return (

@@ -5,7 +5,7 @@ import Link from "../components/designSystem/Link"
 import Wrapper from "../components/Wrapper"
 
 const StyledFooter = styled("footer")`
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #e2e8f0;
   font-family: ${Atoms.font.family.sans};
   font-size: ${Atoms.font.size.small};
 `

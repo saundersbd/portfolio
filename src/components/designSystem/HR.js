@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import { Atoms } from "./designSystem"
 
 export default styled("h2")`
-  background: #eaeaea;
+  background: #e2e8f0;
   border: 0;
   display: block;
   height: 4px;

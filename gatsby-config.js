@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    authorName: "Brian Saunders",
+    title: "Brian Saunders",
+    description: "This is my person site.",
+  },
   plugins: [
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,

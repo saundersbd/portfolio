@@ -2,15 +2,14 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Atoms } from "./designSystem/designSystem"
 import Link from "../components/designSystem/Link"
-import Wrapper from "../components/Wrapper"
 
 const StyledHeader = styled("header")`
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #e2e8f0;
   display: flex;
   font-family: ${Atoms.font.family.sans};
   font-size: ${Atoms.font.size.small};
   justify-content: space-between;
-  padding: ${Atoms.spacing.small};
+  padding: ${Atoms.spacing.xsmall} ${Atoms.spacing.small};
 
   .logo {
     font-weight: bold;
@@ -28,21 +27,9 @@ const Header = () => (
   <StyledHeader>
     <div className="logo">
       <Link underline={false} to="/">
-        Brian Saunders
+        Home
       </Link>
     </div>
-    <ul>
-      <li>
-        <Link underline={false} to="/about">
-          About
-        </Link>
-      </li>
-      <li>
-        <Link underline={false} to="/blog">
-          Writing
-        </Link>
-      </li>
-    </ul>
   </StyledHeader>
 )
 

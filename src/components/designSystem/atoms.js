@@ -28,17 +28,10 @@ export default {
     narrow: `31rem`,
   },
   colors: {
-    blackAlpha: "rgba(0, 0, 0, 0.75)",
-    whiteAlpha: "rgba(255, 255, 255, 0.75)",
-    wash: "#fefefe",
-    site: "#e33d26",
-    text: "#222",
-    subhead: "#555",
-    meta: "#44464B",
-    mark: "rgba(255, 200, 0, 0.15)",
-    highlight: "#ffc800",
-    complementary: "#058cff",
-    additive: "rgba(0,0,0,.05)",
+    wash: "#F7FAFC",
+    site: "#3182CE",
+    text: "#2D3748",
+    subhead: "#718096",
   },
   font: {
     family: {

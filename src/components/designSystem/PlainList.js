@@ -2,17 +2,24 @@ import styled from "@emotion/styled"
 import Atoms from "./atoms"
 
 const PlainList = styled("ul")`
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #e2e8f0;
   list-style-type: none;
   margin-bottom: ${Atoms.spacing.large};
+
+  @media (max-width: ${Atoms.breakpoints.medium}) {
+  }
 
   @media (max-width: ${Atoms.breakpoints.narrow}) {
     padding-top: ${Atoms.spacing.medium};
   }
 
   li {
-    height: 13rem;
+    height: 11rem;
     position: relative;
+
+    @media (max-width: ${Atoms.breakpoints.medium}) {
+      height: auto;
+    }
 
     @media (max-width: ${Atoms.breakpoints.narrow}) {
       height: auto;
@@ -20,7 +27,7 @@ const PlainList = styled("ul")`
     }
 
     :after {
-      background: #eaeaea;
+      background: #e2e8f0;
       content: "";
       display: block;
       height: 1px;
@@ -34,6 +41,11 @@ const PlainList = styled("ul")`
       height: 100%;
       transition: all 0.6s;
       z-index: 1;
+
+      @media (max-width: ${Atoms.breakpoints.medium}) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
 
       @media (max-width: ${Atoms.breakpoints.narrow}) {
         display: block;
@@ -54,19 +66,22 @@ const PlainList = styled("ul")`
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -2rem;
-        right: -2rem;
+        left: -1rem;
+        right: -1rem;
         background: none;
         border-radius: 15px;
         transition: all 0.6s;
         z-index: -1;
 
-        @media (max-width: ${Atoms.breakpoints.narrow}) {
+        @media (max-width: ${Atoms.breakpoints.medium}) {
+          left: -1rem;
+          right: -1rem;
         }
       }
       :hover:before {
-        background: #f2f2f2;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background: #edf2f7;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
         @media (max-width: ${Atoms.breakpoints.narrow}) {
           background: transparent;
@@ -97,8 +112,7 @@ const PlainList = styled("ul")`
         }
 
         span {
-          backface-visibility: hidden;
-          background-color: #555;
+          background-color: #718096;
           border-radius: 4px;
           color: ${Atoms.colors.wash};
           display: inline-block;
@@ -108,13 +122,11 @@ const PlainList = styled("ul")`
           padding: 0.1rem 0.35rem;
         }
         h3 {
-          backface-visibility: hidden;
           font-family: ${Atoms.font.family.sans};
           font-size: ${Atoms.font.size.large};
           margin-bottom: ${Atoms.spacing.xxsmall};
         }
         p {
-          backface-visibility: hidden;
           font-family: ${Atoms.font.family.serif};
           margin-bottom: ${Atoms.spacing.xsmall};
         }
