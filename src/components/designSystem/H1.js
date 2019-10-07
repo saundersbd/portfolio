@@ -4,6 +4,7 @@ import Atoms from "./atoms"
 
 const H1 = ({ ...props }) => {
   const style = css`
+    font-family: ${Atoms.font.family.sans};
     font-size: ${Atoms.font.size.h1};
     line-height: 1.4;
     margin-bottom: ${Atoms.spacing.medium};

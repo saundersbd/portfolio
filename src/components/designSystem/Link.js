@@ -12,11 +12,18 @@ const styles = underline => css`
   }
 `
 
-const Link = ({ children, href, to, underline, ...other }) => {
+const Link = ({ children, href, to, underline = true, ...other }) => {
+  if (to !== undefined) {
+    return (
+      <GatsbyLink css={styles(underline)} to={to} {...other}>
+        {children}
+      </GatsbyLink>
+    )
+  }
   return (
-    <GatsbyLink css={styles(underline)} to={to} {...other}>
+    <a css={styles(underline)} href={href} {...other}>
       {children}
-    </GatsbyLink>
+    </a>
   )
 }
 

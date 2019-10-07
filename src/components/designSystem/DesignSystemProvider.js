@@ -7,11 +7,14 @@ const components = {
   h1: designSystem.H1,
   h2: designSystem.H2,
   h3: designSystem.H3,
+  h4: designSystem.H4,
   p: designSystem.P,
+  a: designSystem.Link,
   ul: designSystem.UL,
   hr: designSystem.HR,
   table: designSystem.Table,
   Image,
+  Link: designSystem.Link,
 }
 
 const DesignSystemProvider = ({ children }) => (

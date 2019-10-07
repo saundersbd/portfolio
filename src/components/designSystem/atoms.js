@@ -12,7 +12,7 @@ const scales = {
 const widths = {
   auto: "auto",
   fill: "100%",
-  container: "34rem",
+  container: "40rem",
 }
 
 widths.page = `calc(${widths.container} + ${BASELINE * scales.medium * 2}rem)`
@@ -24,15 +24,16 @@ export default {
   baseline: BASELINE,
   widths,
   breakpoints: {
-    medium: `64em`,
-    narrow: `50em`,
+    medium: `60rem`,
+    narrow: `31rem`,
   },
   colors: {
     blackAlpha: "rgba(0, 0, 0, 0.75)",
     whiteAlpha: "rgba(255, 255, 255, 0.75)",
     wash: "#fefefe",
     site: "#e33d26",
-    text: "#111",
+    text: "#222",
+    subhead: "#555",
     meta: "#44464B",
     mark: "rgba(255, 200, 0, 0.15)",
     highlight: "#ffc800",
@@ -41,11 +42,12 @@ export default {
   },
   font: {
     family: {
-      display: `"Orelo Variable", "Times New Roman", serif`,
-      sans: `"National 2 Web", -apple-system, system-ui, BlinkMacSystemFont, sans-serif`,
+      sans: `"IBM Plex", -apple-system, system-ui, BlinkMacSystemFont, sans-serif`,
+      serif: `IBM Plex Serif`,
       mono: `"IBM Plex Mono", monospace`,
     },
     size: {
+      xsmall: `${scales.xsmall}rem`,
       small: `${scales.small}rem`,
       regular: `${scales.medium}rem`,
       h1: `${scales.xlarge}rem`,

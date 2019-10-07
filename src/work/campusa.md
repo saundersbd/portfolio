@@ -1,14 +1,26 @@
 ---
 title: CampUSA App
 date: 2015-01-02
+excerpt: CampUSA is a native app for iOS and Android that lets people book reservations at campgrounds.
+company: Vokal
+thumbnail: /images/thumbnails/campusa-thumb.png
 ---
 
+import Helmet from "react-helmet"
+
+<Helmet title="CampUSA" />
+
 # CampUSA App
+
+---
 
 |               |                                                                      |
 | ------------- | -------------------------------------------------------------------- |
 | Team Members: | Erin Mays, Maria Surawska, Carl Hill-Popper, David Ryan, Alex Nimmer |
 | Platforms:    | iOS, Android                                                         |
+| Date:         | 2016                                                                 |
+
+---
 
 CampUSA is a native app for iOS and Android that lets people book reservations at Thousand Trails campgrounds. When we started working on the project, the majority of campground bookings were handled over the phone. The Thousand Trails company wanted to create a native app experience that would allow people to explore and book campsites while they’re away from the computer.
 

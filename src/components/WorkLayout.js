@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import DesignSystemProvider from "./designSystem/DesignSystemProvider"
 import { Global } from "@emotion/core"
 import { Atoms } from "./designSystem/designSystem"
-import WorkHeader from "../components/WorkHeader"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 import Wrapper from "../components/Wrapper"
 
 export default function PageTemplate({ data: { mdx } }) {
@@ -18,18 +20,24 @@ export default function PageTemplate({ data: { mdx } }) {
             padding: 0,
           },
           html: {
-            background: "#F8F8F8",
-            color: "#222",
-            fontFamily: "IBM Plex",
+            background: Atoms.colors.wash,
+            color: Atoms.colors.text,
+            fontFamily: "IBM Plex Serif",
             fontSize: "125%",
             lineHeight: Atoms.baseline,
+
+            [`@media (max-width: ${Atoms.breakpoints.medium})`]: {
+              fontSize: "100%",
+            },
           },
         }}
       />
-      <WorkHeader />
+      <Helmet></Helmet>
+      <Header />
       <Wrapper>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </Wrapper>
+      <Footer />
     </DesignSystemProvider>
   )
 }

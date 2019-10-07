@@ -16,7 +16,7 @@ export default styled("table")`
     padding-left: none;
     vertical-align: top;
   }
-  td:first-child {
+  td:first-of-type {
     font-weight: bold;
     width: 30%;
   }

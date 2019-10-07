@@ -9,10 +9,12 @@ const WorkIndex = () => {
         edges {
           node {
             id
-            excerpt
             frontmatter {
               title
               date(formatString: "MMMM DD, YYYY")
+              excerpt
+              company
+              thumbnail
             }
             fields {
               slug
@@ -24,19 +26,21 @@ const WorkIndex = () => {
   `)
   const { edges: posts } = data.allMdx
   return (
-    <div>
-      <PlainList>
-        {posts.map(({ node: post }) => (
-          <li key={post.id}>
-            <h3>
-              <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-            </h3>
-
-            <p>{post.excerpt}</p>
-          </li>
-        ))}
-      </PlainList>
-    </div>
+    <PlainList>
+      {posts.map(({ node: post }) => (
+        <li key={post.id}>
+          <Link underline={false} to={post.fields.slug}>
+            <img src={post.frontmatter.thumbnail} alt="" />
+            <div>
+              <span>{post.frontmatter.company}</span>
+              <h3>{post.frontmatter.title}</h3>
+              <p>{post.frontmatter.excerpt}</p>
+              <button>Read More</button>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </PlainList>
   )
 }
 

@@ -1,12 +1,19 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Atoms } from "./designSystem/designSystem"
-import { maxHeaderSize } from "http"
 
 const Figure = styled("figure")`
   display: flex;
   flex-direction: column;
   margin-bottom: ${Atoms.spacing.medium};
+  margin-right: -5rem;
+  margin-left: -5rem;
+
+  @media (max-width: ${Atoms.breakpoints.medium}) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   img {
     display: block;
     width: 100%;

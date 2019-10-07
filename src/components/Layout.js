@@ -1,9 +1,9 @@
 import React from "react"
 import { Global } from "@emotion/core"
 import DesignSystemProvider from "./designSystem/DesignSystemProvider"
-import { Atoms, PlainList } from "./designSystem/designSystem"
+import { Atoms } from "./designSystem/designSystem"
 import Wrapper from "../components/Wrapper"
-import WorkIndex from "../components/WorkIndex"
+import Header from "../components/header"
 
 export default function Layout({ children, ...props }) {
   return (
@@ -16,14 +16,19 @@ export default function Layout({ children, ...props }) {
             padding: 0,
           },
           html: {
-            background: "#F8F8F8",
-            color: "#222",
-            fontFamily: "IBM Plex",
+            background: Atoms.colors.wash,
+            color: Atoms.colors.text,
+            fontFamily: Atoms.font.family.serif,
             fontSize: "125%",
-            lineHeight: "1.625rem",
+            lineHeight: Atoms.baseline,
+
+            [`@media (max-width: ${Atoms.breakpoints.medium})`]: {
+              fontSize: "100%",
+            },
           },
         }}
       />
+      <Header />
       <Wrapper>{children}</Wrapper>
     </DesignSystemProvider>
   )

@@ -4,7 +4,7 @@ import Atoms from "./designSystem/atoms"
 
 const StyledWrapper = styled("div")`
   margin: 0 auto;
-  padding: ${Atoms.spacing.small};
+  padding: ${Atoms.spacing.medium};
   max-width: ${Atoms.widths.container};
 `
 
