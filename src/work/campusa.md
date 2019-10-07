@@ -27,7 +27,6 @@ CampUSA is a native app for iOS and Android that lets people book reservations a
 <Image 
     alt="Alt Text"
     src="/images/campusa/campusa-main-image.png"
-    caption="This is a caption"
 />
 
 ## The Biggest Challenges

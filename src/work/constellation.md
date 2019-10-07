@@ -67,7 +67,6 @@ The dashboard is the most important part of this prototype. It shows the status 
 <Image 
     alt="Dashboard Screen"
     src="/images/constellation/constellation-dashboard.png"
-    caption="This is a caption"
 />
 
 ### View Bill
@@ -77,7 +76,6 @@ Since there is no good way for customers to view their bill details online other
 <Image 
     alt="View Bill Screen"
     src="/images/constellation/constellation-view-bill.png"
-    caption="This is a caption"
 />
 
 ### Pay Bill
@@ -87,7 +85,6 @@ The biggest difference in the new payment interface is going to come from whiche
 <Image 
     alt="Pay Bill Screen"
     src="/images/constellation/constellation-pay-bill.png"
-    caption="This is a caption"
 />
 
 ## Results
