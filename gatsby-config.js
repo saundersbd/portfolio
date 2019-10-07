@@ -33,7 +33,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["IBM Plex"],
+          families: ["IBM Plex Sans", "IBM Plex Serif"],
           urls: [`/fonts/fonts.css`],
         },
       },
