@@ -37,7 +37,7 @@ module.exports = {
       options: {
         custom: {
           families: ["IBM Plex Sans", "IBM Plex Serif"],
-          urls: [`/fonts/fonts.css?v=${fontFileHash}`],
+          urls: [`./fonts/fonts.css`],
         },
       },
     },
