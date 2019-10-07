@@ -1,7 +1,7 @@
 import React from "react"
 import { Link as GatsbyLink } from "gatsby"
 import { css } from "@emotion/core"
-import { Atoms } from "./designSystem"
+import Atoms from "./atoms"
 
 const styles = underline => css`
   color: inherit;
