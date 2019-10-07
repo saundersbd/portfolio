@@ -1,6 +1,3 @@
-const md5File = require("md5-file")
-const fontFileHash = md5File.sync("./static/fonts/fonts.css")
-
 module.exports = {
   siteMetadata: {
     authorName: "Brian Saunders",
@@ -37,7 +34,7 @@ module.exports = {
       options: {
         custom: {
           families: ["IBM Plex Sans", "IBM Plex Serif"],
-          urls: [`./fonts/fonts.css`],
+          urls: [`/fonts/fonts.css`],
         },
       },
     },

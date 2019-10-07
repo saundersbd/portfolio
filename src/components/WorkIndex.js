@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { Link, PlainList } from "./designSystem/designSystem"
 import H2 from "./designSystem/H2"
 
