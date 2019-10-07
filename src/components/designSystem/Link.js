@@ -6,6 +6,8 @@ import { Atoms } from "./designSystem"
 const styles = underline => css`
   color: inherit;
   text-decoration: ${underline ? "underline" : "none"};
+  transition: all 0.25s;
+
   &:hover,
   &:focus {
     color: ${Atoms.colors.site};

@@ -132,10 +132,17 @@ const PlainList = styled("ul")`
         }
         button {
           background: transparent;
-          border: none;
+          border: 1px solid #a0aec0;
+          border-radius: 5px;
           color: ${Atoms.colors.subhead};
-          font-family: ${Atoms.font.family.serif};
-          font-size: ${Atoms.font.size.regular};
+          font-family: ${Atoms.font.family.sans};
+          font-size: 0.65rem;
+          padding: 0.1rem 0.35rem;
+          text-transform: uppercase;
+
+          :hover {
+            cursor: pointer;
+          }
         }
       }
     }

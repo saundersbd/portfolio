@@ -1,12 +1,7 @@
 import WorkIndex from "../components/WorkIndex"
+import HomeHero from "../components/HomeHero"
 
-# I'm Brian Saunders, a Product Designer who lives in Chicago.
-
-I do all the things that the other Product Designers do, and I do some of them quite well! Right now I'm improving employee engagement and working on design systems at Paylocity. I’m happiest when I know that my work is making someone’s life easier.
-
-In my spare time I like to read and play the piano. Send me a message at [saundersbd@gmail.com](saundersbd@gmail.com).
-
-## Work
+<HomeHero />
 
 <WorkIndex />
 
