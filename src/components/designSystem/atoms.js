@@ -37,7 +37,6 @@ export default {
     family: {
       sans: `"IBM Plex", -apple-system, system-ui, BlinkMacSystemFont, sans-serif`,
       serif: `"IBM Plex Serif", serif`,
-      serif,
       mono: `"IBM Plex Mono", monospace`,
     },
     size: {
