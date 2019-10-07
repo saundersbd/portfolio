@@ -22,7 +22,7 @@ export default function PageTemplate({ data: { mdx } }) {
           html: {
             background: Atoms.colors.wash,
             color: Atoms.colors.text,
-            fontFamily: "IBM Plex Serif",
+            fontFamily: Atoms.font.family.serif,
             fontSize: "125%",
             lineHeight: Atoms.baseline,
 
