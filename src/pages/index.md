@@ -1,9 +1,12 @@
-import WorkIndex from "../components/WorkIndex"
 import HomeHero from "../components/HomeHero"
+import WorkIndex from "../components/WorkIndex"
+import BlogIndex from "../components/BlogIndex"
 
 <HomeHero />
 
 <WorkIndex />
+
+<BlogIndex />
 
 ## Experience
 

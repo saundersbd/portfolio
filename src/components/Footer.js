@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Atoms } from "./designSystem/designSystem"
 import Link from "../components/designSystem/Link"
-import Wrapper from "../components/Wrapper"
+import WrapperPost from "../components/WrapperPost"
 
 const StyledFooter = styled("footer")`
   border-top: 1px solid #e2e8f0;
@@ -12,9 +12,9 @@ const StyledFooter = styled("footer")`
 
 const Footer = () => (
   <StyledFooter>
-    <Wrapper>
+    <WrapperPost>
       <Link to="/">Back</Link>
-    </Wrapper>
+    </WrapperPost>
   </StyledFooter>
 )
 

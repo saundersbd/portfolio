@@ -7,7 +7,7 @@ import { Global } from "@emotion/core"
 import { Atoms } from "./designSystem/designSystem"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Wrapper from "../components/Wrapper"
+import WrapperPost from "../components/WrapperPost"
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
@@ -34,9 +34,9 @@ export default function PageTemplate({ data: { mdx } }) {
       />
       <Helmet></Helmet>
       <Header />
-      <Wrapper>
+      <WrapperPost>
         <MDXRenderer>{mdx.body}</MDXRenderer>
-      </Wrapper>
+      </WrapperPost>
       <Footer />
     </DesignSystemProvider>
   )

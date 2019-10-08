@@ -7,8 +7,23 @@ import P from "./P"
 import UL from "./UL"
 import HR from "./HR"
 import PlainList from "./PlainList"
+import PostList from "./PostList"
 import Link from "./Link"
 import Table from "./Table"
 import Blockquote from "./Blockquote"
 
-export { Atoms, H1, H2, H3, H4, P, UL, HR, PlainList, Link, Table, Blockquote }
+export {
+  Atoms,
+  H1,
+  H2,
+  H3,
+  H4,
+  P,
+  UL,
+  HR,
+  PlainList,
+  PostList,
+  Link,
+  Table,
+  Blockquote,
+}

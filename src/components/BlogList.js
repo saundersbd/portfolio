@@ -1,13 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link, PlainList } from "./designSystem/designSystem"
-import H2 from "./designSystem/H2"
+import { Link, PostList } from "./designSystem/designSystem"
 
 const WorkIndex = () => {
   const data = useStaticQuery(graphql`
-    query workIndex {
+    query blogList {
       allMdx(
-        filter: { fields: { sourceName: { eq: "work" } } }
+        filter: { fields: { sourceName: { eq: "blog" } } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
@@ -30,24 +29,18 @@ const WorkIndex = () => {
   `)
   const { edges: posts } = data.allMdx
   return (
-    <div>
-      <H2 id="work">Work</H2>
-      <PlainList>
-        {posts.map(({ node: post }) => (
-          <li key={post.id}>
+    <PostList>
+      {posts.map(({ node: post }) => (
+        <li key={post.id}>
+          <h3>
             <Link underline={false} to={post.fields.slug}>
-              <img src={post.frontmatter.thumbnail} alt="" />
-              <div>
-                <span>{post.frontmatter.company}</span>
-                <h3>{post.frontmatter.title}</h3>
-                <p>{post.frontmatter.excerpt}</p>
-                <button>Read More</button>
-              </div>
+              {post.frontmatter.title}
             </Link>
-          </li>
-        ))}
-      </PlainList>
-    </div>
+          </h3>
+          <p>{post.frontmatter.excerpt}</p>
+        </li>
+      ))}
+    </PostList>
   )
 }
 
