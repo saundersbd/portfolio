@@ -76,8 +76,10 @@ const HomeHero = () => (
     </P>
 
     <P>
-      I favor short messages sent to{" "}
+      Get in touch with me at{" "}
       <Link href="mailto:saundersbd@gmail.com">saundersbd@gmail.com</Link>.
+      Resume is available{" "}
+      <Link href="/documents/saunders-resume.pdf">here</Link>.
     </P>
 
     <div>
