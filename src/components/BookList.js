@@ -34,6 +34,12 @@ const books = [
     cover: "images/books/happier.jpg",
     url: "https://amzn.to/33xtmuW",
   },
+  {
+    title: "Man's Search for Meaning",
+    author: "Viktor E. Frankl",
+    cover: "images/books/search-for-meaning.jpg",
+    url: "https://amzn.to/2MfF2MT",
+  },
 ]
 
 const Library = styled("div")`
