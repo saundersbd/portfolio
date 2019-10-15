@@ -30,6 +30,13 @@ const Header = () => (
         Home
       </Link>
     </div>
+    <ul>
+      <li>
+        <Link to="/library" underline={false}>
+          Library
+        </Link>
+      </li>
+    </ul>
   </StyledHeader>
 )
 

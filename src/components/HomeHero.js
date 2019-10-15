@@ -11,6 +11,7 @@ const StyledSection = styled("section")`
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  margin-top: -${Atoms.spacing.medium};
 
   @media (max-width: ${Atoms.breakpoints.medium}) {
     height: 80vh;
