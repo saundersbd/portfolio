@@ -1,7 +1,7 @@
 ---
 title: Paylocity
 date: 2016-06-01
-excerpt: I've been a Product Designer at Paylocity since June 2016.
+excerpt: I design HR and Payroll products that are used by thousands of employees across the continent.
 company: Paylocity
 thumbnail: /images/thumbnails/paylocity-thumb.png
 ---
@@ -14,7 +14,7 @@ import Helmet from "react-helmet"
 
 I've been working at Paylocity since June 2016. I've worked on a variety of products in that time, from legacy payroll products to brand new social network products.
 
-_Unfortunately I am NDA'd out the wazoo, which prevents me from going into great detail about the work I do at Paylocity. Please [get in touch](mailto:saundersbd@gmail.com) if you'd like to hear more about the problems I'm solving_.
+_Unfortunately, I can't go into great detail about the work I do at Paylocity. Please [get in touch](mailto:saundersbd@gmail.com) if you'd like to hear more about the problems our team is solving_.
 
 ## Community
 
@@ -42,6 +42,7 @@ I spend a lot of time writing and thinking about Citrus, our internal design sys
 ---
 
 ## Single Employee Record
+
 Sometimes employees for large companies work at multiple locations at the same time. When this is the situation, they have separate login credentials for each location, and the company administrators have to maintain separate records for the employee as well. It's a bad experience for both employees and admins. The single employee record project represents a technical and experiential feat that enables admins to access all the important information about an employee in a single place, from anywhere within the application. Employees can also use a single login to view all of their information in one place.
 
 ### Challenges
