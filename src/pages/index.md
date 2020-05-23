@@ -12,7 +12,7 @@ import BlogIndex from "../components/BlogIndex"
 
 ### Paylocity
 
-#### Product Designer (since June 2016)
+#### Senior Product Designer (since June 2016)
 
 I joined the design team at Paylocity when it was relatively young and have seen it grow to over 30 people. In my time there I've worked on Analytics, Payroll, HR, and social networking products. Currently I am the lead designer on a product that has over 16 developers and QA engineers.
 
