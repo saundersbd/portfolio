@@ -37,15 +37,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["IBM Plex Sans", "IBM Plex Serif"],
-          urls: [`/fonts/fonts.css`],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["UA-149521660-1"],

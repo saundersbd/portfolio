@@ -127,7 +127,7 @@ const PlainList = styled("ul")`
           margin-bottom: ${Atoms.spacing.xxsmall};
         }
         p {
-          font-family: ${Atoms.font.family.serif};
+          font-family: ${Atoms.font.family.sans};
           margin-bottom: ${Atoms.spacing.xsmall};
         }
         button {

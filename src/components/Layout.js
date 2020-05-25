@@ -18,7 +18,7 @@ export default function Layout({ children, ...props }) {
           html: {
             background: Atoms.colors.wash,
             color: Atoms.colors.text,
-            fontFamily: Atoms.font.family.serif,
+            fontFamily: Atoms.font.family.sans,
             fontSize: "125%",
             lineHeight: Atoms.baseline,
 
